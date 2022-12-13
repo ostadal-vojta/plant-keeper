@@ -1,3 +1,20 @@
+# TODO
+- [ ] create skeleton for cards
+- [ ] create button component that is actual button
+- [ ] create layout for cards to be displayed in a scrolable row
+- [ ] create better card detail (expanded state)
+ - probably picture on the left in one column
+ - in second column would be title under that would be water amount?
+ - then description
+ - then any other stuff we come up with
+- [ ] decide on default state of cards (expanded/collapsed)
+- [ ] utilize card checkbox for bulk actions
+- [ ] install prisma into project
+- [ ] utilize database for prisma (open planet I guess or any other would do)
+- [x] update tsconfig with common routes to make imports better
+- [ ] ...
+
+
 # Create T3 App
 
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
