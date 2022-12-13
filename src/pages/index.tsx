@@ -1,8 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
-import Card from "../components/card/Card";
-
-import { trpc } from "../utils/trpc";
+import Card from "@/components/card/Card";
+import { trpc } from "@/utils/trpc";
 
 const Home: NextPage = () => {
   const plant = trpc.plantRouter.plant.useQuery({ plantId: 1 });
