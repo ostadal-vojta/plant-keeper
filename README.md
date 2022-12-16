@@ -1,18 +1,12 @@
-# TODO
-- [ ] create skeleton for cards
-- [ ] create button component that is actual button
-- [ ] create layout for cards to be displayed in a scrolable row
-- [ ] create better card detail (expanded state)
- - probably picture on the left in one column
- - in second column would be title under that would be water amount?
- - then description
- - then any other stuff we come up with
-- [ ] decide on default state of cards (expanded/collapsed)
-- [ ] utilize card checkbox for bulk actions
-- [ ] install prisma into project
-- [ ] utilize database for prisma (open planet I guess or any other would do)
-- [x] update tsconfig with common routes to make imports better
-- [ ] ...
+# Plant Keeper
+
+## Description of the project
+In this project we would like to create a system for keeping track of various amount of plants in given place. For example when you are in a office space where you have multiple live plants that require regular watering, but there are many people  and not enough comunication or the communication can be tedious.
+In order to prevent this you can create a place (the given office space for example) into which you can insert your plants. To add a plant you can just take picture of that plant with little bit of surrounding to make it easier to locate and input some basic information about the plant (or just choose from pre-defined list).
+Then the application will remind you when it is time to water the plant.
+If you don't want to take care of the plants yourself you can invite other people to give you helping hand with watering those green organisms.
+When the plant is watered you just check the plant as watered and it will remind itself when it is time to water it again.
+
 
 
 # Create T3 App
