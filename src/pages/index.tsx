@@ -1,7 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Card from "@components/card/Card";
-import Hero from "@components/card/Hero";
 import { router } from "@router";
 
 const Home: NextPage = () => {
