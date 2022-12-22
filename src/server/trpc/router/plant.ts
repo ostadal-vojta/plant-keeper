@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { router, publicProcedure } from "@/server/trpc/trpc";
+import { router, publicProcedure } from "@trpcserver/trpc";
 
 export const plantRouter = router({
     plant: publicProcedure
