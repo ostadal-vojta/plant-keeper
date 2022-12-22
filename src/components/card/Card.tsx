@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import Button from "./Button";
+import Button from "@components/card/Button";
 
 type ICard = {
     title: string;
