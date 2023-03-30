@@ -16,7 +16,7 @@ model Plant {
     description String
     place       Place   @relation(fields: [placeId], references: [id])
     placeId     Int
-    watered     DateTime
+    watered     DateTime?
     interval    Int
     amount      Float
 }

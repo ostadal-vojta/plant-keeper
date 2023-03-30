@@ -2,12 +2,10 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Card from "@/components/card/Card";
 import { trpc } from "@/utils/trpc";
-import dayjs from "dayjs";
 
 const Home: NextPage = () => {
 
   const allPlants = trpc.plantRouter.allPlants.useQuery();
-  //const allPlaces = trpc.placeRouter.allPlaces.useQuery();
 
   return (
     <>
