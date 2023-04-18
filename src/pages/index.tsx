@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           {allPlants.isLoading && (
             <Card title="Loading" />
           )}
-          {allPlants.data && allPlants.data.map((plant) => {
+          {allPlants.data && allPlants.data.sortedByDaysToWater.map((plant) => {
             return <Card
               key={plant.id}
               title={plant.name}

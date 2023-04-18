@@ -9,8 +9,20 @@ export const plantRouter = router({
     .query(({ ctx, input }) => {
       return ctx.prisma.plant.findUnique({ where: { id: input } });
     }),
-  allPlants: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.plant.findMany();
+  allPlants: publicProcedure.query(async ({ ctx }) => {
+    const plants = await ctx.prisma.plant.findMany();
+
+    const plantsWithDaysToWater = plants.map((plant) => {
+      if (!plant.watered) {
+        return { ...plant, daysToWater: 0 };
+      }
+      return { ...plant, daysToWater: dayjs(plant.watered).add(plant.interval, "day").diff(dayjs(), "day") };
+    });
+    const sortedByDaysToWater = plantsWithDaysToWater.sort((plantA, plantB) => {
+      return plantA.daysToWater - plantB.daysToWater;
+    });
+
+    return { sortedByDaysToWater };
   }),
 
   create: publicProcedure
